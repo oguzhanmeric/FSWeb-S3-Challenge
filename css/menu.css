@@ -63,6 +63,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
+    color: rgb(225, 239, 230);
     text-decoration: none;
 }
 
@@ -95,6 +96,44 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+.contenier-head {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+    background:rgba(0, 0, 0, 0.8);
+    height: 30vh;
+    
+    
+
+}
+
+    
+
+.contenier-head nav a {
+    color: rgb(225, 239, 230);
+    font-size: 3rem;
+    
+}
+.menu-link {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media {
+    color: rgb(225, 239, 230);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-media i {
+    margin: 2rem 3rem;
+    font-size: 3rem;
+}
+
 
 /* spacer */
 .spacer {
@@ -114,22 +153,159 @@ header {
     width: 100%;
     height: auto;
     background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(0, 4, 17 );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+    
+    
+}
+
+.menu-container{
+    background-color:rgb(0, 4, 17, 0.8) ;
+}
+.menu h2 {
+    color:rgb(225, 239, 230) ;
+    text-align: center;
+    margin: 0 0 3rem 0;
+    
+}
+
+.yemekler-icecekler {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+   padding: 0 0 10rem 0 ;
+    justify-content: space-around;
+    
+}
+.menu-baslik {
+    width: 40vw;
+    margin: 5rem 0 ;
+    
+}
+
+.urun {
+    margin: 2rem 0;
+}
+.urun-fiyat {
+    display: flex;
+    justify-content: space-between;
+    line-height: 7rem;
+
+}
+.urun-aciklama {
+    font-size:2.5rem;
+    line-height: 2.5rem;
+}
+
+.urun-fiyat p {
+    font-size: 3.3rem;
 }
 
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 100%;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    border-top: 1px solid rgb(225, 239, 230, 0.8);
+}
+
+
+.footer-signup {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    color:rgb(225, 239, 230);
+}
+
+.footer-container {
+    display: flex;
+    justify-content:space-evenly
+
+}
+i .fa-facebook:hover {
+    color: black;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: rgb(225, 239, 230);
+}
+
+footer nav a {
+ color:rgb(225, 239, 230)}
+    
+
+footer .footer-copyright {
+    text-align: right;
+    font-size: 2rem;
+    margin-right: 5rem;
+    color:rgb(225, 239, 230)
+}
+footer #mail {
+    width: 35vw;
+}
+
+.input-mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 120%;
+    width: 100%;
+    margin-left: 4rem;
+}
+
+.input-mail input {
+    width: 50%;
+    height: 100%;
+}
+
+.input-mail button {
+    width: 30%;
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
+
+    html {
+        max-width: 4;
+    }
+
+    body {
+        width: 100vw;
+        margin: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, a, i {
+        color: rgb(0, 0, 0);
+        
+    }
+
+    .menu-container {
+        width: 100vw;
+    }
+
+    
+    
+    .menu h2 {
+        color: black;
+        margin-right: 3rem;
+        border-bottom: 10px solid  rgb(0, 4, 17) ;
+        width: 80vw;
+        text-align: center;
+        margin: 0 10vw ;
+        
+    }
+
+
     /* header section */
     .header-title {
         width: 75%;
@@ -138,15 +314,111 @@ footer {
         font-size: 4rem;
     }
 
+    .contenier-head { 
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+
+    .menu-link {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-link a {
+        text-align: center;
+    }
+    nav.social-media  {
+        width: 100%;
+        justify-content: center;
+        
+        
+    }
+
+   
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        
+        
+    }
+
+
     /* menu */
     .menu {
         background-image: none;
     }
 
+    h3 {
+        border: 3px solid black;
+        
+        
+    }
+
+    .menu-container {
+        background-color:rgb(225, 239, 230);
+        color: black;
+    }
+
+    .yemekler-icecekler {
+        flex-direction: column;
+        width: 50vw;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .menu-baslik {
+        width: 60vw;
+        margin: 5rem 20vw 0 20vw;
+    
+        
+    }
+
+    .urun {
+        padding: 0 0 4rem 0 ;
+        border-bottom: 3px solid black;
+    }
+
+    .urun-fiyat {
+        flex-direction: column;
+        line-height: normal;
+    }
+    
+
     /* footer section */
+
     footer {
-        height: auto;
-        padding-top: 2.5vh;
-        font-size: 2rem;
+        margin-right: 4rem;
+    }
+    .footer-container {
+        display: flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        
+        
+    
+    }
+    
+    
+    footer nav {
+        
+        width: 100%;
+        color: rgb(225, 239, 230);
+        flex-direction: column;
+    }
+    
+    footer nav a {
+     text-align: center;}
+        
+    
+    footer .footer-copyright {
+        text-align: center;
+        font-size: 1rem;
+        margin-right:0
+    }
+    footer #mail {
+        width: 100%;
     }
 }
